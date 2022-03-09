@@ -2,12 +2,16 @@ GET http://localhost:3000/posts
 ###
 GET http://localhost:3000/api/tutorials/:id
 ###
-POST http://localhost:3000/posts
+POST http://localhost:3000/user
+Content-Type: application/json
+{
+"title" : "wa wa wa"
+}
 ###
-PUT http://localhost:3000/api/tutorials/:id
+PUT http://localhost:3000/api/posts/:id
 ###
-DELETE  http://localhost:3000/api/tutorials/:id
+DELETE  http://localhost:3000/api/posts/:id
 ###
 DELETE  http://localhost:3000/api/posts
 ###
-GET http://localhost:3000/api/tutorials?title=[kw]
+GET http://localhost:3000/api/posts?title=[kw]

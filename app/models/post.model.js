@@ -1,6 +1,6 @@
 module.exports = mongoose => {
-    const Tutorial = mongoose.model(
-      "tutorial",
+    const Post = mongoose.model(
+      "post",
       mongoose.Schema(
         {
           title: String,
@@ -10,7 +10,7 @@ module.exports = mongoose => {
         { timestamps: true }
       )
     );
-    return Tutorial;
+    return Post;
   };
 //   schema.method("toJSON", function() {
 //     const { __v, _id, ...object } = this.toObject();
