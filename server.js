@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -42,14 +44,7 @@ function initial() {
         }
         console.log("added 'user' to roles collection");
       });
-      new Role({
-        name: "moderator"
-      }).save(err => {
-        if (err) {
-          console.log("error", err);
-        }
-        console.log("added 'moderator' to roles collection");
-      });
+
       new Role({
         name: "admin"
       }).save(err => {
