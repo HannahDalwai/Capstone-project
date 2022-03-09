@@ -1,1 +1,13 @@
-GET http://localhost:3000/users
+GET http://localhost:3000/posts
+###
+GET http://localhost:3000/api/tutorials/:id
+###
+POST http://localhost:3000/posts
+###
+PUT http://localhost:3000/api/tutorials/:id
+###
+DELETE  http://localhost:3000/api/tutorials/:id
+###
+DELETE  http://localhost:3000/api/posts
+###
+GET http://localhost:3000/api/tutorials?title=[kw]
