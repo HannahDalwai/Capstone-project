@@ -2,10 +2,10 @@ require('dotenv').config()
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
+const cors = require("cors"); 
 const app = express();
 var corsOptions = {
-  origin: "http://localhost:5000"
+  origin: "http://localhost:3000"
 };
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
@@ -63,7 +63,7 @@ require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

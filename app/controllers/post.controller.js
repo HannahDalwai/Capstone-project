@@ -1,30 +1,30 @@
 const db = require("../models");
-const Tutorial = db.tutorials;
-// Create and Save a new Tutorial
+const Post = db.posts;
+// Create and Save a new Post
 exports.create = (req, res) => {
   
 };
-// Retrieve all Tutorials from the database.
+// Retrieve all Posts from the database.
 exports.findAll = (req, res) => {
   
 };
-// Find a single Tutorial with an id
+// Find a single Post with an id
 exports.findOne = (req, res) => {
   
 };
-// Update a Tutorial by the id in the request
+// Update a Post by the id in the request
 exports.update = (req, res) => {
   
 };
-// Delete a Tutorial with the specified id in the request
+// Delete a Post with the specified id in the request
 exports.delete = (req, res) => {
   
 };
-// Delete all Tutorials from the database.
+// Delete all Posts from the database.
 exports.deleteAll = (req, res) => {
   
 };
-// Find all published Tutorials
+// Find all published  Posts
 exports.findAllPublished = (req, res) => {
   
 };
